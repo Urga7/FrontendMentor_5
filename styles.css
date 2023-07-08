@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+    --clr-paleBlue: hsl(225, 100%, 94%);
+    --clr-brightBlue: hsl(245, 75%, 52%);
+    --clr-veryPaleBlue: hsl(225, 100%, 98%);
+    --clr-desaturatedBlue: hsl(224, 23%, 55%);
+    --clr-darkBlue: hsl(223, 47%, 23%);
+
+    --fz-default: 16px;
+
+    --fw-paragraph: 500;
+    --fw-semiBold: 700;
+    --fw-bold: 900;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+.bg-image {
+    background: url('images/pattern-background-desktop.svg') no-repeat center/cover;
+    height: 50vh;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
+}
+
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--clr-paleBlue);
+    color: var(--clr-desaturatedBlue);
+}
+
+.container {
+    height: 70%;
+    width: 450px;
+    background-color: white;
+    border-radius: 1.25rem;
+    overflow: hidden;
+}
+
+article {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 3rem;
+    max-height: 100%;
+}
+
+h1 {
+    color: var(--clr-darkBlue);
+    padding-bottom: 1.3rem;
+}
+
+.plan {
+    background-color: var(--clr-veryPaleBlue);
+    height: 6rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.plan-description, .change-button {
+    padding: 1.5rem;
+}
+
+.plan-description {
+    display: flex;
+    align-items: center;
+}
+
+.plan-description img {
+    height: 48px;
+    width: 48px;
+}
+
+.plan-info {
+    padding: 1rem;
+}
+
+.plan-title {
+    padding: .3rem;
+    color: var(--clr-darkBlue);
+    font-weight: var(--fw-bold);
+}
+
+.change-button {
+    font-weight: var(--fw-semiBold);
+    text-decoration: underline;
+    color: var(--clr-brightBlue);
+}
+
+.change-button:hover {
+    cursor: pointer;
+    text-decoration: none;
+    color: hsl(245, 75%, 72%);
+}
+
+.buttons button {
+    font-weight: var(--fw-bold);
+    color: white;
+    background-color: var(--clr-brightBlue);
+    border: none;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+}
+
+.buttons button:hover {
+    background-color: hsl(245, 75%, 72%);
+    cursor: pointer;
+}
+
+.order-cancellation {
+    font-weight: var(--fw-semiBold);
+}
+
+.order-cancellation:hover {
+    cursor: pointer;
+    color: var(--clr-darkBlue);
+}
